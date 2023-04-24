@@ -1,0 +1,44 @@
+.container{
+width: 75vw;
+}
+
+span{float: right;
+}
+button{
+font-size: 18px;
+}
+table{
+width: 100%;
+border: 1px solid black;
+}
+td,th{
+padding: 2px;
+font-size: 14px;
+}
+thead{
+background-color: rgb(187, 59, 59);
+color: white;
+font-size: 14px;
+}
+
+h2{
+color: brown;
+font-style: italic;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-right: 20px;
+}
+
+
+@media screen and (max-width: 880px) {
+  table{
+    width:550px;
+    
+  }
+  .container{
+      margin-left: 40px;
+  }
+  hr{
+      width: 700px;
+  }
+
+  } 

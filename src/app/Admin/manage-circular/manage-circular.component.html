@@ -1,0 +1,45 @@
+<div class="container">
+    <h2><i class="fa fa-bars"></i> Manage Circulars</h2>
+    <hr>
+    <h3><span><button class="btn btn-danger" id="b1">Add Circular</button></span></h3>
+    <br><br>
+    <div id="out">
+        <div>
+            <div style="display: flex;column-gap: 10px; ">
+                <a href="">All </a>
+                <a href="">A </a>
+                <a href="">B</a>
+                <a href="">C</a>
+                <a href="">D</a><a href="">E</a><a href="">F</a><a href="">G</a><a href="">H</a><a href="">I</a>
+                <a href="">J</a><a href="">K</a><a href="">L</a><a href="">M</a><a href="">N</a><a href="">O</a>
+                <a href="">P</a><a href="">Q</a><a href="">R</a><a href="">S</a><a href="">T</a><a href="">U</a>
+                <a href="">V</a><a href="">W</a><a href="">X</a><a href="">Y</a><a href="">Z</a>
+            </div>
+        </div><br>
+        <div id="d1">
+            Supplier Code <input type="text"><b> &nbsp; OR </b>&nbsp; Supplier Name <input type="text">&nbsp;&nbsp;
+            <button class="btn btn-danger">Search</button>
+
+        </div><br>
+
+        <div>
+            <a href="">Results 1-4 of 4</a><br><br>
+            <table border="1">
+                <thead>
+                    <th>Circular Date</th>
+                    <th>Circular Subject</th>
+                    <th>View Circular</th>
+                    <th>Edit Circular</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let c of circular">
+                    <td>{{c.circularDate | date: 'dd/MM/yyyy'}}</td>
+                    <td>{{c.circularSubject}}</td>
+                    <td><a href="/viewcircularadmin"  (click)="viewcircularadmin(c.circularMainId)">View</a></td>
+                    <td><a href="/editcircularadmin" (click)="editcircularadmin(c.circularMainId)">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

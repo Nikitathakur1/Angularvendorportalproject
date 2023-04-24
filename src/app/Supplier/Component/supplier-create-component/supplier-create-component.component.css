@@ -1,0 +1,30 @@
+
+h2{
+    color: brown;
+    /* font-style: italic; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 75vw;
+}
+#d1{
+ background-color: lightgray;
+ width: 90%;
+ padding: 15px;
+ margin-left: 50px;
+ border-radius: 5px;
+}
+thead{
+    background-color: rgb(187, 59, 59);
+    color: white;
+}
+td,th{
+    padding: 3px;
+    font-size: 16px;
+}
+#t2{
+    border: 1px solid black;
+    width: 100%;
+}
+
+

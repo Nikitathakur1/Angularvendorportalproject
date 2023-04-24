@@ -1,0 +1,40 @@
+<div class="container">
+    <h2> Manage Suppliers</h2>
+    <hr>
+    <div id="d2">
+        Supplier Code <input type="text"  [(ngModel)]="scode" (click)="clickbox()">
+        <b> &nbsp; OR </b>&nbsp;
+         Supplier Name <input type="text"  [(ngModel)]="sname" (click)="clickbox()">&nbsp;
+        &nbsp;&nbsp;
+        <button class="btn btn-danger" (click)="serchsupplier()">Search</button>
+    </div>
+    <h3><a>Results 1-100 Of 233 </a></h3>
+    <table border="1" class="table">
+        <thead>
+            <th>Supplier Code</th>
+            <th>Supplier Name</th>
+            <th>City</th>
+            <th>Email ID</th>
+            <th>Contact Person</th>
+            <th>Login ID</th>
+            <th>Landline Number</th>
+            <th>Mobile Number</th>
+            <th>Action</th>
+    </thead>
+    <tbody *ngFor="let i of allvendor">
+            <tr *ngIf="i.disablestatus==0">
+                <td>{{i.sapVendorCode}}</td>
+                <td>{{i.sapVendorName}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.emailId}}</td>
+                <td>{{i.vendorContactPerson}}</td>
+                <td>{{i.loginId}}</td>
+                <td>{{i.contactNumber}}</td>
+                <td>{{i.mobileNumber}}</td>
+                <td><a href="/editsupplier" (click)="selectrow(i.loginId)">Edit</a> | <a (click)="disablesupplier(i.vendorId)">Disable</a></td>
+            </tr>
+    </tbody>
+    </table> 
+</div>
+
+

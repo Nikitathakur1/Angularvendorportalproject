@@ -1,0 +1,16 @@
+a { cursor: pointer; }
+
+.app-container {
+    min-height: 320px;
+    overflow: hidden;
+}
+
+.btn-user {
+    width: 120px;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #007bff;
+    text-decoration: none;
+}

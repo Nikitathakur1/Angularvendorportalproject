@@ -1,0 +1,25 @@
+.container{
+    width: 75vw;
+}
+.d1{
+    display: flex;
+    background-color: lightgray;
+    width: 70%;
+    margin-left: 100px;
+    padding: 5px;
+    column-gap: 150px;
+}
+/* #d2{
+    background-color: lightgray;
+} */
+table{
+    width: 99%;
+    border: 1px solid black;
+}
+thead{
+    color: white;
+    background-color: rgb(187, 59, 59);
+}
+td,th{
+    padding: 3px;
+}

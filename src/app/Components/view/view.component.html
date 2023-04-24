@@ -1,0 +1,20 @@
+<div class="container">
+    <div>
+        <div *ngIf="option===s1">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div *ngIf="option===s2">
+            <app-admin-menu></app-admin-menu>
+        </div>
+    </div>
+    <section style="position: relative;">
+        <div style="position:  absolute;">
+            <i class="fa fa-3x fa-sign-out text-primary" (click)="logout()"></i><br>
+            <router-outlet></router-outlet>
+        </div>
+        <!-- <div [hidden]="show" class="chatbox">
+            <app-chat></app-chat>
+        </div> -->
+    </section>
+
+</div>

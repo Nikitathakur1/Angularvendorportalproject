@@ -1,0 +1,35 @@
+#in{
+    background-color: lightgrey;
+    width:85%;
+    padding: 10px;
+    margin-left: 80px;
+    border-radius: 5px;
+    border: 1px solid lightslategrey;
+}
+#divtable{
+    border: 1px solid lightgrey;
+    width: 100%;
+    font-size: 16px;
+}
+.container{
+    width: 75vw;
+}
+table{
+    border: 1px solid black;
+}
+thead{
+    color: white;
+    background-color: rgb(187, 59, 59);
+}
+td,th{
+    padding: 5px;
+}
+/* h4{
+    column-gap:30px;
+} */
+span{
+    margin-left: 40px;
+}
+h5{
+    font-size: 17px;
+}

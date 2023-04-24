@@ -1,0 +1,121 @@
+<div class="container">
+    <h2>View Invoice Details </h2>
+    <hr>
+    <div id="d1">
+        <table class="uptable">
+            <tr>
+                <td><b>Invoice Number </b></td>
+                <td>{{inv.invoiceNumber}}</td>
+                <td><b>Invoice Date </b></td>
+                <td>{{inv.invoiceDate}}</td>
+            </tr>
+            <tr>
+                <td><b>Transporter Name </b></td>
+                <td>{{inv.transportName}}</td>
+                <td><b>Cosignee Name</b></td>
+                <td>{{inv.consigneeName}}</td>
+            </tr>
+            <tr>
+                <td><b>Vehicle No</b></td>
+                <td>{{inv.vehicleNumber}}</td>
+                <td><b>Mode of Transport </b></td>
+                <td>{{inv.modeOfTransport}}</td>
+            </tr>
+        </table>
+    </div><br>
+    <div id="d2">
+        <table class="uptable">
+            <tr>
+                <td><b>PO NO</b></td>
+                <td>{{inv.poNumber}}</td>
+                <td><b>PO Date</b></td>
+                <td>{{inv.poDate}}</td>
+            </tr>
+            <tr>
+                <td><b>TIN NO</b></td>
+                <td>{{inv.tinNumber}}</td>
+                <td><b>Ecc. No</b></td>
+                <td>{{inv.eccNumber}}</td>
+            </tr>
+            <tr>
+                <td><b>PAN No</b></td>
+                <td>{{inv.panNumber}}</td>
+                <td><b>Supplier Contact Person</b></td>
+                <td>{{inv.supplierContactPerson}}</td>
+            </tr>
+            <tr>
+                <td><b>Valid From </b></td>
+                <td>{{inv.validFrom}}</td>
+                <td><b>Valid To </b></td>
+                <td>{{inv.validTo}}</td>
+            </tr>
+            <tr>
+                <td><b>Service Tax No</b></td>
+                <td>{{inv.serviceTaxNumber}}</td>
+                <td><b>Supplier Code </b></td>
+                <td>{{inv.supplierCode}}</td>
+            </tr>
+            <tr>
+                <td><b>Supplier Address </b></td>
+                <td>{{inv.spplierAddress}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <br>
+        <div>
+            <table id="t3" border="1">
+                <thead>
+                    <th>Material Desciption</th>
+                    <th>Material code</th>
+                    <th>No Of Packets</th>
+                    <th>Quantity</th>
+                    <th>Price Per Unit</th>
+                    <th>Gross Value</th>
+                    <th>Cent VAT (%)</th>
+                    <th>Cent VAT amount</th>
+                    <th>Edn cess. (%)</th>
+                    <th>Edn cess amount</th>
+                    <th>VAT/CST (%)</th>
+                    <th>VAT/CST amount</th>
+                    <th>Total</th>
+                </thead>
+                <!-- *ngFor="let i of inv" -->
+                <tr>
+                    <td>{{inv.materialDescription}}</td>
+                    <td>{{inv.materialCode}}</td>
+                    <td>{{inv.noOfPKTS}}</td>
+                    <td>{{inv.quantity}}</td>
+                    <td>{{inv.pricePerUnit}}</td>
+                    <td>{{inv.grossValue}}</td>
+                    <td>{{inv.centVATPercent}}</td>
+                    <td>{{inv.centVATAmount}}</td>
+                    <td>{{inv.edncessPercent}}</td>
+                    <td>{{inv.edncessAmount}}</td>
+                    <td>{{inv.vatcstPercent}}</td>
+                    <td>{{inv.vatcstAmount}}</td>
+                    <td>{{inv.totalQuantityDespatched}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total Net Amount:</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div><br><br>
+        <div style="text-align: center;">
+            <a href="/mnginvoice"><button class="btn-danger">back</button></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+    <h2><i class="fa fa-bars"></i> Manage Invoice Details</h2>
+    <hr>
+    <div id="d1">
+        Supplier Code <input type="text"><b> &nbsp; OR </b>&nbsp; Supplier Name <input type="text">&nbsp;
+        <b>OR</b>&nbsp;Invoice No: <input type="text" >&nbsp;&nbsp;
+        <button class="btn btn-danger">Search</button>
+    </div><br>
+    <div>
+        <a href="">Results 1-84 of 84</a> <span><button class="btn-danger" (click)="exportexcel()">Export to Excel</button></span><br><br>
+        <table border="1">
+            <thead>
+                <th>Supplier Code</th>
+                <th>Supplier Name</th>
+                <th>Purchase Order No.</th>
+                <th>Invoice No.</th>
+                <th>Invoice Date </th>
+                <th>Invoice Details </th>
+                <th>Delete </th>
+            </thead>
+            <tbody *ngIf="invoice.length">
+                <tr *ngFor="let i of invoice">
+                <td>{{i.sapVendorName}}</td>
+                <td></td>
+                <td>{{i.invoicePOId}}</td>
+                <td>{{i.invoiceNo}}</td>
+                <td>{{i.invoiceDate}}</td>
+                <td><a href="/viewinvoiceadmin" (click)="viewinvoiceadmin(i.invId)">View</a>| <a href="/ViewDeliverySchedule" onclick="window.open(href).print()">Print</a></td>
+                <td><a>Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

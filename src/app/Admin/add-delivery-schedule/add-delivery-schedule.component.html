@@ -1,0 +1,57 @@
+<div class="container">
+
+    <h2><i class="fa fa-bars"></i>Add Delivery Schedule</h2>
+    <hr>
+    <div style="width: 85vw;">
+        <div id="d1">
+            Supplier Code: &nbsp;<select name="co" id="co">
+                <option value="co1">KRISHNA INDUSTRIES(100017)</option>
+            </select> &nbsp; &nbsp;
+            Purchase Order Number: &nbsp;<select name="code" id="code">
+                <option value="code1"> 7210001643</option>
+            </select>&nbsp;&nbsp;
+
+            <input type="radio" value="Weekly">Weekly<input type="radio" value="Daily">Daily
+             
+            <button class="btn btn-primary">Submit</button>
+
+        </div><br>
+        <div class="in1">
+            <table id="tablediv">
+                <tr>
+                    <td><b>Purchase Order No: </b></td>
+                    <td><b>Purchase Order Date:</b> </td>
+                </tr>
+                <tr>
+                    <td><b>Supplier Code: </b></td>
+                    <td><b>Supplier Name:</b></td>
+                </tr>
+                <tr>
+                    <td><b>Created Date:</b></td>
+                    <td><b>Month:</b></td>
+                </tr>
+            </table>
+            </div>
+    </div><br>
+    <div style="width: 75vw;">
+        <table border="1">
+            <thead>
+                <th>Material Code</th>
+                <th>Material Desciption</th>
+                <th>Unit</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{users1.materialCode}}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table><br>
+    </div>
+    <div style="text-align: center;">
+        <a href="/mngdeladmin"><button class="btn-danger">Back</button></a>
+    </div>
+</div>
+
+

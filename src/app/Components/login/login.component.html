@@ -1,0 +1,123 @@
+<div class="p-4 col-md-4 offset-md-4 mt-5">
+    <div class="container">
+        <div class="card">
+            <h4 class="card-header">Login</h4>
+            <div class="card-body">
+                <form [formGroup]="loginform" (ngSubmit)="loginUser()">
+                    <div class="form-check form-check-inline">
+                        <!-- <input id="male" type="radio" value="Suppilers" name="gender" formControlName="gender">
+                        <label for="male">Male</label> -->
+
+                        <input class="form-check-input" type="radio" name="option" id="s1" value="Suppilers"
+                            formControlName="option">
+                        <label class="form-check-label" for="s1">Suppilers</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-3">
+                        <input class="form-check-input" type="radio" name="option" id="s2" value="Users"
+                            formControlName="option">
+                        <label class="form-check-label" for="s2">Users</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Email</label>
+                        <input [class.is-invalid] = "loginform.get('uid').invalid && loginform.get('uid').touched" type="email" class="form-control" formControlName="uid" />
+                        <div style="color: red;" *ngIf=" loginform.controls['uid'].touched &&  loginform.controls['uid'].invalid">
+                            <span *ngIf="loginform.errors?.required" class="text"></span>
+                            <span *ngIf=" loginform.controls['uid'].hasError('required')">User Id is required</span>
+                            <span *ngIf="loginform.errors?.pattern" class="text"></span>
+                            <span *ngIf=" loginform.controls['uid'].hasError('pattern')">User Id is invalid</span>
+                        </div>
+                    </div>                     
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input [class.is-invalid] = "loginform.get('pwd').invalid && loginform.get('pwd').touched" type="password" class="form-control" formControlName="pwd" />
+                        <div style="color: red;" *ngIf=" loginform.controls['pwd'].touched &&  loginform.controls['pwd'].invalid">
+                            <span *ngIf="loginform.errors?.required" class="text"></span>
+                            <span *ngIf=" loginform.controls['pwd'].hasError('required')">Password is required</span>
+                            <span *ngIf="loginform.errors?.pattern" class="text"></span>
+                            <span *ngIf=" loginform.controls['pwd'].hasError('pattern')">Password is Invalid</span>
+                        </div>  
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="check">
+                        <label for="check"> &nbsp;Remember me</label>
+                        <br>
+                        <button class="btn btn-primary btn-user" [disabled]="!loginform.valid">
+                            <span class="spinner-border spinner-border-sm mr-1" *ngIf="isloading"></span>
+                            Sign In
+                        </button>
+                        <br>
+                        <div class="row d-flex align-items-start">
+                            <a routerLink="../recoverpwd" class="btn btn-link">Recover Password</a><br>
+                        </div>
+                        <div class="row d-flex align-items-start">
+                            <a routerLink="../register" class="btn btn-link">New User? Click to Singup</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="container-fluid">
+    <div class="r1">
+        <form [formGroup]="loginform" (ngSubmit)="loginUser()">
+            <h1>Login</h1>
+
+            <br>
+            <table>
+                <tr>
+                    <td><input type="radio" name="gender" checked>
+                        <label for="s1"> &nbsp;Suppilers</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender">
+                        <label for="s2"> &nbsp;Users</label>
+                    </td>
+                </tr><br>
+                <tr>
+                    <td><label for="sid">User Id </label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-user-circle"></i>
+                            <input type="text" formControlName="uid" id="uid" placeholder="Email Id" required />
+                        </div>
+                    </td>
+                </tr><br>
+                <tr>
+                    <td><label for="pwd">Password </label></td>
+                    <td>
+                        <div class="input-container">
+                            <i class="fa fa-unlock-alt"></i>
+                            <input type="password" formControlName="pwd" id="pwd" placeholder="Password" required>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+
+            <input type="checkbox" id="check">
+            <label for="check"> &nbsp;Remember Me</label>&nbsp;&nbsp;
+
+            <a style="text-decoration: underline; font-weight:bold; " routerLink="/recoverpwd">Recover Password</a>
+
+            &nbsp;&nbsp;
+
+            <a style="text-decoration: underline; font-weight:bold; " routerLink="/register">New User? click to
+                Singup</a>
+
+            <br>
+
+
+            <button style="text-align: center;" class="btn btn-primary">Sign In</button>
+
+
+
+        </form>
+    </div>
+</div> -->

@@ -1,0 +1,43 @@
+.container{
+    width: 75vw;
+}
+#d1{
+    background-color: lightgray;
+    width: 70vw;
+    margin-left: 40px;
+    padding: 10px;
+    /* column-gap: 50px; */
+    /* column-count: 3; */
+}
+.inpt{
+    width: 50px;
+}
+#d2{
+    width: 75vw;
+    background-color: lightgray;
+    padding: 5px;
+    margin-left: 10px;
+}
+#d3{
+    background-color: lightgray;
+    padding: 10px;
+}
+.inp1{
+    width: 100px;
+}
+
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+thead{
+    background-color: rgb(187, 59, 59);
+    color: white;
+}
+
+.invc{
+    float: right;
+}
+.uptable{
+    border: 1px solid lightgrey;
+}

@@ -1,0 +1,43 @@
+h2{
+    color: brown;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 75vw;
+    display: block;
+}
+#out{
+    /* background-color: lightgray; */
+    width: 80%;
+    margin-left: 80px;
+    padding: 10px;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+thead{
+    background-color: rgb(187, 59, 59);
+    color: white;
+}
+td,th{
+    padding: 5px;
+    font-size: 17px;
+}
+
+ @media screen and (max-width: 680px) {
+   
+.container{
+    margin-left: 80px;
+}
+#out{
+    width: 500px;
+    margin-left: 3px;
+    padding: 10px;
+}
+hr{
+    width: 500px;
+}
+ }
+ 

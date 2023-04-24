@@ -1,0 +1,35 @@
+<div class="container">
+    <h2><i class="fa fa-bars"></i> Purchase Order</h2>
+    <hr>
+    <div id="d1">
+        Supplier Code <input type="text"><b> &nbsp; OR </b>&nbsp; Supplier Name <input type="text">&nbsp;
+        &nbsp;&nbsp;
+        <button class="btn btn-danger">Search</button>
+    </div><br>
+    <div>
+        <a href="">Results 1-100 of 176</a> <span><button class="btn-danger" (click)="exportexcel()">Export to Excel</button>&nbsp;&nbsp; <button  class="btn-danger" (click)="print()">Print</button></span><br><br>
+        <table id="exceltable" border="1">
+            <thead>
+                <th>Supplier Code</th>
+                <th>Supplier Name</th>
+                <th>Email ID</th>
+                <th>PO No</th>
+                <th>Po Date</th>
+                <th>View PO Details</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+               <tr *ngFor="let po of users">
+                <td>{{po.sapVendorCode}}</td>
+                <td>{{po.sapVendorName}}</td>
+                <td></td>
+                <td>{{po.poId}}</td>
+                <td>{{po.poDate}}</td>
+                <td><a href="/purchasedetails" (click)="selectrow(po.poId)">View</a>| <a href="/purchasedetails" onclick="window.open(href).print()">Print</a></td>
+                <td><a>Approve</a></td>
+               </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

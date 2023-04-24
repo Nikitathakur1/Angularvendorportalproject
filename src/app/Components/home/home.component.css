@@ -1,0 +1,28 @@
+
+
+@media screen {
+    .container{
+        /* color: white; */
+        width: 75vw;
+      
+        font-family: 'Times New Roman', Times, serif;
+    } 
+}
+h2{
+    color: brown;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.t1{
+    text-align: center;
+    margin-top: 160px;
+}
+hr{
+    color: black;
+    size: 2px
+}
+  h1{
+      font-weight: bolder;
+      color: darkcyan;
+      font-size: 60px;
+  }

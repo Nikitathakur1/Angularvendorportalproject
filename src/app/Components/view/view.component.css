@@ -1,0 +1,93 @@
+
+/* @media screen and (min-width: 800px) { */
+    .container{
+        display: flex;
+        width: 80vw; 
+        height: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+    }
+  /* } */
+section{
+    /* background-color: lightcyan; */
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100vw; 
+    height: auto;
+    padding: 10px;
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* color: white; */
+}
+i{
+    float: right;
+}
+.chatbox{
+    float: right;
+    border: 2px solid lightblue;
+    padding: 0px;
+    width: 20vw;
+    height: 60vh;
+    margin-top: 11em;
+    opacity: 0.8;
+    margin-left:5.5em;
+    background-color: lightblue;
+    border-radius: 5px;
+    overflow-y: scroll;
+    position: absolute;
+    left: 50em;
+}
+.togglbtn{
+  
+    margin-top: 37em;
+    position: relative;
+    left: 41em;
+    border: none;
+    background-color: white;
+    
+    border-radius: 50%;
+}
+
+/* .togglbtn{
+    float: right;
+    border: none;
+       margin-top: 37em;
+} */
+/* .fa {
+    margin: 0px 2px;
+} */
+
+
+/* 
+  @media screen and (max-width: 1180px) {
+      .togglbtn{
+          left:24em;
+          margin-top:28em;
+      }
+  }
+
+  @media screen and (max-width: 980px) {
+      .togglbtn{
+          left:20em;
+          margin-top:26em;
+      }
+  }
+  @media screen and (max-width: 680px) {
+      .togglbtn{
+          left:17em;
+          margin-top:26em;
+      }
+  }
+  
+   @media screen and (max-width: 550px) {
+      .togglbtn{
+          left:14em;
+          margin-top:27em;
+      }
+  }
+
+   */

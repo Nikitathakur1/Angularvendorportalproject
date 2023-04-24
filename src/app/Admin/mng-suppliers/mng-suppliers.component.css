@@ -1,0 +1,36 @@
+.container{
+    width: 75vw;
+}
+
+span{float: right;
+}
+button{
+font-size: 18px;
+}
+table{
+width: 100%;
+border: 1px solid black;
+}
+
+thead{
+background-color: rgb(187, 59, 59);
+color: white;
+}
+#d2{
+    background-color: lightgray;
+    width:58vw;
+    margin-left:80px;
+    padding: 10px;
+    /* column-gap: 50px; */
+    /* column-count: 3; */
+}
+h2{
+color: brown;
+font-style: italic;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-right: 20px;
+} 
+
+button:disabled{
+  display: none;  
+}

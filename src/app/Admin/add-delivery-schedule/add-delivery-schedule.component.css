@@ -1,0 +1,117 @@
+
+.container{
+    width: 75vw;
+}
+h2{
+    color: brown;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#d1{
+    background-color: lightgray;
+    width: 74vw;
+    margin-left:10px;
+    padding: 10px;
+    /* column-gap: 50px; */
+    /* column-count: 3; */
+}
+.in1{
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    display: flex;
+    column-gap: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 70vw;
+    margin-left: 40px;
+}
+table{
+    width: 95%;
+    border: 1px solid black;
+    margin-left: 30px;
+}
+
+thead{
+    color: white;
+    background-color: rgb(187, 59, 59);
+}
+td,th{
+    padding: 10px;
+}
+#tablediv{
+    border: 1px solid lightgrey;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 1080px) 
+{
+    #d1
+    {
+       width: 740px;
+       font-size: 17px;
+      
+    }
+    hr
+    {
+        width: 800px;    
+    }
+   .in1
+   {
+       width: 860px;
+       padding: 5px;
+       font-size:8px;
+       column-gap: 200px;
+       margin-left: -10px;
+   }
+   h2
+   {
+       font-size: 23px;
+   }
+   table
+   {
+       width: 850px;
+       margin-left: -10px;
+   }
+   #d2
+   {
+       width: 600px;
+   }
+}
+
+
+@media screen and (max-width: 680px) 
+{
+    #d1
+    {
+       width: 540px;
+       font-size: 17px;
+      
+    }
+    hr
+    {
+        width: 600px;    
+    }
+   .in1
+   {
+       width: 600px;
+       padding: 5px;
+       font-size:8px;
+       column-gap: 200px;
+       margin-left: -10px;
+   }
+   h2
+   {
+       font-size: 20px;
+   }
+   table
+   {
+       width: 550px;
+       margin-left: -10px;
+   }
+   #d2
+   {
+       width: 600px;
+   }
+}

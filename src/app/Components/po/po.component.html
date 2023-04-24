@@ -1,0 +1,23 @@
+<div class="container">
+    <h2><i class="fa fa-shopping-cart"></i> Purchase Order</h2>
+    <hr>
+    <div id="d1">
+        <h3><a>Results 1-1 Of 1 </a><span><button (click)="exportexcel()" class="btn btn-primary">Export to
+                    Excel</button></span></h3>
+        <br>
+        <table id="exporttab" border="1" class="table">
+            <thead>
+                <th>PO No</th>
+                <th>PO Date</th>
+                <th>View PO Details</th>
+            </thead>
+            <tbody *ngFor="let user of apiData">
+                <tr>
+                    <td>{{user.sappoNo}}</td>
+                    <td>{{user.poDate}}</td>
+                    <td><a href="/podetails" (click)="selectrow(user.poMainId)">View</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

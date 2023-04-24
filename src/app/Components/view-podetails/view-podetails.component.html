@@ -1,0 +1,64 @@
+<div class="container">
+    <h2>Scheduling Agreement / PO</h2>
+    <hr>
+    <div style="width: 75vw;">
+        <div id="in">
+            <table id="divtable">
+                <tr>
+                    <td><b>PO No and Date: </b>{{users.sappoNo}} & {{users.poDate }}</td>
+                    <td><b>Valid From: </b> {{users.validFrom}}</td>
+                    <td><b>Valid To : </b>{{users.validTo}}</td>
+                </tr>
+                <tr>
+                    <td><b>Supplier Name : </b> {{users.sapVendorName}}</td>
+                    <td><b>Supplier Addr: </b>{{users.address}}</td>
+                </tr>
+                <tr>
+                    <td><b>Supplier Code :</b>{{users.sapVendorCode}}</td>
+                    <td><b>Contact Person : </b></td>
+                    <td><b>Service Tax No.: </b></td>
+                </tr>
+                <tr>
+                    <td><b>TIN no:</b>{{users.tinNo}}</td>
+                    <td><b>Ecc.no.:</b> {{users.eccNo}}</td>
+                    <td><b>Pan No:</b>{{users.panNo}}</td>
+                </tr>
+
+            </table>
+        </div>
+    </div><br>
+    <div style="width: 75vw;">
+        <table border="1" style="width: 100%;">
+            <thead>
+                <th>Sr No.</th>
+                <th>Material Description</th>
+                <th>Material code</th>
+                <th>Unit</th>
+                <th>Price/Unit</th>
+                <th>GrossValue</th>
+                <th>CentVat or ServiceTax(%)</th>
+                <th>Edcs(%)</th>
+                <th>SHECess(%)</th>
+                <th>VAT/CST (%)</th>
+            </thead>
+            <!-- *ngFor="let u of user" -->
+            <tbody>
+                <tr>
+                    <td>{{users.sapVendorCode}}</td>
+                    <td>{{users.materialDescription}}</td>
+                    <td>{{users.materialCode}}</td>
+                    <td>{{users.unit}}</td>
+                    <td>{{users.pricePerUnit}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br>
+    <div style="text-align: center;">
+        <a href="/po"><button class="btn-danger">back</button></a>
+    </div>
+</div>

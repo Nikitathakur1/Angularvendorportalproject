@@ -1,0 +1,67 @@
+<div class="p-4 col-md-4 offset-md-4">
+    <div class="container">
+        <div class="card">
+            <h4 class="card-header">Register New User</h4>
+            <div class="card-body">
+                <form (ngSubmit)="registerUsers()" [formGroup]="registerform">
+                    <div class="form-group">
+                        <label for="userName">UserName</label>
+                        <input type="text" formControlName="uname" id="uname" placeholder="UserName" required
+                            class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">password</label>
+                        <input type="password" formControlName="pwd" id="pwd" placeholder="Password" required
+                            class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" formControlName="cpwd" id="cpwd" placeholder="confirmPassword" required class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">FirstName</label>
+                        <input type="text" formControlName="fname" id="fname" placeholder="FirstName" required
+                            class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">LastName</label>
+                        <input type="text" formControlName="lname" id="lname" placeholder="LastName" required
+                            class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">UserEmail</label>
+                        <input type="text" formControlName="mail" id="mail" placeholder="Email Id" required
+                            class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="UserType">User Type</label>
+                        <input type="number" formControlName="types" id="types" placeholder="User Type " required
+                            class="form-control" />
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="UserType">User Type</label>
+                        <select class="form-control" id="types" formControlName="types">
+                            <option value="admin">superAdmin</option>
+                            <option value="supplier">supersupplier</option>
+                        </select>
+                    </div> -->
+
+
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-user">
+                            <span class="spinner-border spinner-border-sm mr-1" *ngIf="isloading"></span>
+                            Sign Up
+                        </button>
+                        <br>
+
+                        <div class="row d-flex align-items-start">
+                            <a routerLink="/login" class="btn btn-link">Already register? click to
+                                Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

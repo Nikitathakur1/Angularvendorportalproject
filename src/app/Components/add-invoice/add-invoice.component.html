@@ -1,0 +1,140 @@
+<div class="container">
+    <h2>Add Invoice Details </h2>
+    <hr>
+    <div id="d1">
+        <table class="uptable">
+            <tr>
+                <td><b>PO Number : </b>
+                    <select name="" id="" (change)="changeevent($event)">
+                        <option>PO Number</option>
+                        <option [value]="v.sappoNo" *ngFor="let v of allpos">
+                            {{v.sappoNo}}
+                        </option>
+                    </select>
+                </td>
+                <td><b>Delivery Schedule No : </b>
+                    <select (change)="changeev($event)">
+                        <option>Delivery Schedule No </option>
+                        <option [value]="d.delivaryScheduledNo" *ngFor="let d of alldel">
+                            {{d.delivaryScheduledNo}}
+                        </option>
+                    </select>
+                </td>
+                <td><button class="btn-info" (click)="serachpo()">Search</button></td>
+            </tr>
+        </table>
+    </div><br>
+    <div id="d2">
+        <table class="uptable" *ngFor="let p of allpos;">
+            <tbody *ngIf="p.sappoNo==searchpo">
+                <tr>
+                    <td><b>PO NO:</b><span>{{p.sappoNo}}</span></td>
+                    <td><b>PO Date: </b><span>{{p.poDate}}</span></td>
+                    <td><b>Valid From: </b><span>{{p.validFrom}}</span></td>
+                    <td><b>Valid To: </b><span>{{p.validTo}}</span></td>
+                </tr>
+                <tr>
+                    <td><b>Supplier Name: </b><span></span></td>
+                    <td><b>Supplier Code: </b> <span></span></td>
+                    <td><b>Supplier Contact Person: </b><span></span></td>
+                    <td><b>Supplier Address: </b><span></span></td>
+                </tr>
+                <tr>
+                    <td><b>TIN NO:</b><span>{{p.tinNo}}</span></td>
+                    <td><b>ECC No:</b><span>{{p.eccNo}}</span></td>
+                    <td><b>PAN No:</b><span>{{p.panNo}}</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+
+
+        <form action="" [formGroup]="addinvoiceform" (ngSubmit)="adinvoiceform()">
+            <div id="d3">
+                <div>
+                    <b>Invoice Number :</b><input formControlName="invno" type="text">
+                    <b>Invoice Date :</b><input formControlName="invdate" type="date">
+                    <b>Consignee Name: </b><input formControlName="csgnname" type="text">
+                </div>
+                <div>
+                    <b>Transporter Name :</b><input formControlName="transnm" type="text">
+                    <b>Mode of Transport :</b><input formControlName="modetrans" type="text">
+                    <b>Vehicle No :</b><input formControlName="vehicleno" type="text">
+                </div>
+            </div>
+            <br>
+            <div class="bg-light">
+                <table border="1">
+                    <thead>
+                        <th>Material Code</th>
+                        <th>Material Description</th>
+                        <th>No of Packets</th>
+                        <th>Quantity</th>
+                        <th>Price per Unit</th>
+                        <th>CentVAT </th>
+                        <th>ServiceTax</th>
+                        <th>Edcs(%)</th>
+                        <th>Edcs</th>
+                        <th>Shecess(%)</th>
+                        <th>Shecess</th>
+                        <th>VAT/CST(%)</th>
+                        <th>VAT/CST amount</th>
+                        <th>Total Amount</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input formControlName="matcode" class="inpt" type="text"></td>
+                            <td><input formControlName="matdesc" class="inpt" type="text"></td>
+                            <td><input formControlName="packets" class="inpt" type="text"></td>
+                            <td><input formControlName="qty" class="inpt" type="text"></td>
+                            <td><input formControlName="price" class="inpt" type="text"></td>
+                            <td><input formControlName="edcspercent" class="inpt" type="text"></td>
+                            <td><input formControlName="cntvat" type="text" class="inpt"></td>
+                            <td><input formControlName="servtax" type="text" class="inpt"></td>
+                            <td><input formControlName="edcs" class="inpt" type="text"></td>
+                            <td><input formControlName="shecesspercent" class="inpt" type="text"></td>
+                            <td><input formControlName="shecess" class="inpt" type="text"></td>
+                            <td><input formControlName="vatpercent" class="inpt" type="text"></td>
+                            <td><input formControlName="vat" class="inpt" type="text"></td>
+                            <td><input formControlName="totalqty" class="inpt" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total Net Amount</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br>
+            <div class="d-flex " style="float: right;">
+                <p class="fw-bold">Please enter the total invoice amount : </p>
+                <input formControlName="totalamt" type="text">
+            </div>
+            <br> <br>
+            <div style="text-align: center;">
+                <a href="/mnginvoice"><button class="btn-danger">back</button></a>&nbsp;
+                <a><button class="btn-success">Submit</button></a>
+            </div>
+        </form>
+    </div>
+
+    <br>
+
+
+</div>
+<div>
+
+</div>
+<div>
+</div>

@@ -1,0 +1,33 @@
+.container{
+    width: 50vw;
+    margin-left: 120px;
+}
+#d1{
+    width: 35vw;
+    background-color: lightgray;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+h2{
+    color: brown;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+table{
+    width:100%;
+    border: 1px solid;
+}
+thead{
+    background-color: rgb(187, 59, 59);
+    color: white;
+}
+td,th{
+    padding: 15px;
+    font-size: 18px;
+}
+.invc{
+    float: right;
+}

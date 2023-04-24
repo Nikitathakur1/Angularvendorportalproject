@@ -1,0 +1,45 @@
+
+<div class="sidenav-content">
+  <button class="menubar" mat-raised-button color="primary" (click)="drawer.toggle()">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+</div>
+<mat-drawer-container class="container" autosize>
+
+  <mat-drawer #drawer class="sidenav" opened mode="side">
+    <div>
+      <a href="/home">
+        <li class="list-unstyled"><i class="fa fa-home " style="font-size:25px"></i> Home</li>
+      </a>
+      <a href="/po">
+        <li class="list-unstyled"><i class="fa fa-shopping-cart" style="font-size:25px"></i>  Purchase Order</li>
+      </a>
+      <a href="/mngdelivery">
+        <li class="list-unstyled"><i class="fa fa-truck" style="font-size:25px"></i> Manage Delivery Schedule </li>
+      </a>
+      <a href="/mnginvoice">
+        <li class="list-unstyled"><i class="fa fa-file" style="font-size:25px"></i> Manage Invoice Details</li>
+      </a>
+      <a href="/trackdelivery">
+        <li class="list-unstyled"><i class="fa fa-map-marker" style="font-size:25px"></i> Track Delivery Status </li>
+      </a>
+      <a href="/mngcircular">
+        <li class="list-unstyled"> <i class="fa fa-bars" style="font-size:25px"></i> Manage Circulars </li>
+      </a>
+      <a href="/chngpass">
+        <li class="list-unstyled"><i class="fa fa-key" style="font-size:25px"></i> Change Password </li>
+      </a>
+      <a href="/locn">
+        <li class="list-unstyled"><i class="fa fa-map-marker" style="font-size:25px"></i> Location </li>
+      </a>
+      <a href="/addrs">
+        <li class="list-unstyled"><i class="fa fa-home" style="font-size:25px"></i> Address </li>
+      </a>
+      <a href="/supplr">
+        <li class="list-unstyled"><i class="fa fa-file" style="font-size:25px"></i> Manage Suppliers </li>
+      </a>
+    </div>  </mat-drawer>
+
+  
+
+</mat-drawer-container>

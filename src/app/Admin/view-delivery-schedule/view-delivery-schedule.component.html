@@ -1,0 +1,47 @@
+<div class="container">
+    <h2><i class="fa fa-bars"></i>View Delivery Schedule</h2>
+
+    <hr>
+    <div><button id="b1" style="float: right;" class="btn-danger" (click)="exportexcel()">Export to Excel</button></div><br><br>
+    
+    <div class="in">
+        <table id="tablediv">
+           <tr>
+               <td><b>Delivery Schedule No</b>{{users.dsMainId}}</td>
+               <td><b>Delivery Schedule Date </b>{{users.dsEnteredDate}}</td>
+           </tr> 
+           <tr>
+               <td><b>Purchase Order No</b>{{users.sappoNo}}</td>
+               <td><b>Purchase Order Date</b>{{users.poDate}}</td>
+            
+           </tr>
+           <tr>
+               <td><b>Supplier Code</b>{{users.sapCode}}</td>
+               <td><b>Supplier Name</b>{{users.supplierName}}</td>
+           </tr>
+        </table>
+        </div>
+    </div><br>
+
+
+    <div style="width: 75vw;">
+        <table border="1">
+            <thead>
+              
+                <th>Material Desciption</th>
+                <th>Material Code</th>
+                <th>Unit</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{users.materialDescription}}</td>
+                    <td>{{users.materialCode}}</td>
+                    <td>{{users.unit}}</td>
+                   
+                </tr>
+            </tbody>
+        </table><br>
+        <div style="text-align: center;">
+        <a id="b1" href="/mngdeladmin"><button class="btn-danger">Back</button></a>
+    </div>
+    </div>

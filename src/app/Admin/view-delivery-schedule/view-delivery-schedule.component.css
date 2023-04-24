@@ -1,0 +1,43 @@
+.container{
+    width: 75vw; 
+}
+h2{
+    color: brown;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.in{
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    display: flex;
+    column-gap: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 70vw;
+    margin-left: 40px;
+}
+table{
+    width: 95%;
+    border: 1px solid black;
+    margin-left: 30px;
+    
+}
+
+thead{
+    color: white;
+    background-color: rgb(187, 59, 59);
+}
+td,th{
+    padding: 5px;
+}
+#tablediv{
+    border: 1px solid lightgrey;
+    font-size: 18px;
+}
+
+@media print{
+    #b1{
+        display: none;
+    }
+  
+} 

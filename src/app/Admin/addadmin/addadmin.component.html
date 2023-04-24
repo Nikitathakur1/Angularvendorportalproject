@@ -1,0 +1,60 @@
+<div class="container">
+    <h2><i class="fa fa-bars"></i> Add Admin</h2>
+    <hr>
+    <div>
+        <!-- *ngFor="let user of users" -->
+
+        <div id="in">
+            <table id="divtable">
+                <tr>
+                    <td><b>*Login Id <input type="text"></b></td>
+                    <td><b>*First Name <input type="text"> </b></td>
+                    <td><b>*Last Name <input type="text"> </b></td>
+                </tr>
+                <tr>
+                    <td><b>*Email <input type="text"></b></td>
+                    <td><b>*Password <input type="text"></b></td>
+
+                </tr>
+                <tr>
+                    <td><b>Confirm Password<input type="text"></b></td>
+                </tr>
+                <tr>
+                    <td><label for="type">*Admin Type</label>
+
+                        <select name="type" id="types">
+                            <option value="type1">Super Admin</option>
+                            <option value="type2">Admin</option>
+                        </select>
+                    </td>
+                </tr>
+                <td>
+                    <tr> <input type="checkbox" id="box" value="Disable">
+                        <label for="disable">Disable</label><br>
+                    </tr>
+                </td>
+            </table>
+
+
+        </div>
+    </div><br>
+    <div>
+        <table border="1">
+
+            <thead>
+                <th>Page Description</th>
+                <th>Access <input type="checkbox" id="access"></th>
+                <th>No Access <input type="checkbox" id="noaccess"></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,100 @@
+.container{
+    width: 75vw;
+    
+}
+span{
+    float: right;
+}
+#d1{
+    background-color: lightgray;
+    width:82vw;
+    /* margin-left:30px; */
+    padding: 10px;
+    /* column-gap: 50px; */
+    /* column-count: 3; */
+}
+h2{
+    color: brown;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+thead{
+    background-color: rgb(187, 59, 59);
+    color: white;
+}
+td,th{
+    padding: 5px;
+    font-size: 17px;
+}
+
+@media print{
+    #b1{
+        display: none;
+    }
+    #d1{
+        display: none;
+    }
+} 
+
+
+@media screen and (max-width: 1080px) 
+{
+    #d1
+    {
+       width: 1000px;
+       font-size: 17px;
+      
+    }
+    hr
+    {
+        width: 800px;    
+    }
+ 
+   h2
+   {
+       font-size: 23px;
+   }
+   table
+   {
+       width: 850px;
+       margin-left: -10px;
+   }
+   #d2
+   {
+       width: 600px;
+   }
+}
+
+
+@media screen and (max-width: 680px) 
+{
+    #d1
+    {
+      width: 800px;
+       font-size: 17px;
+       margin-left: 60px;
+      
+    }
+    hr
+    {
+        width: 600px;    
+    }
+  
+   h2
+   {
+       font-size: 20px;
+   }
+   table
+   {
+       width: 550px;
+       margin-left: -10px;
+   }
+   #d2
+   {
+       width: 600px;
+   }
+}

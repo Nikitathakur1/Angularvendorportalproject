@@ -1,0 +1,39 @@
+.container{
+    width: 75vw;
+}
+
+#in{
+    background-color: lightgrey;
+    width:85%;
+    padding: 10px;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: 1px solid lightslategrey;
+}
+#divtable{
+    border: 1px solid lightgrey;
+    width: 100%;
+    font-size: 16px;
+}
+h2{
+    color: brown;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table{
+    border: 1px solid black;
+}
+thead{
+    color: white;
+    background-color: rgb(187, 59, 59);
+}
+td,th{
+    padding: 5px;
+}
+/* h4{
+    column-gap:100px;
+} */
+span{
+    margin-left: 100px;
+}

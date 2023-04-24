@@ -1,0 +1,43 @@
+.container{
+    width: 75vw;
+}
+#d1,#d2{
+    width: 65vw;
+    padding: 5px;
+    margin-left: 50px;
+    /* left: 50px; */
+    background-color: lightgrey;
+    border: 1px solid gray;
+}
+.uptable
+{
+    width: 90%;
+}
+#t1,#t2,#t3{
+    width: 100%;
+}
+thead{
+    background-color: rgb(187, 59, 59);
+    color: white;
+}
+td,th{
+    padding: 2px;
+}
+
+
+#d2{
+    width: 75vw;
+    background-color: lightgray;
+    padding: 5px;
+    margin-left: 10px;
+    /* height: 100px; */
+}
+
+#d3{
+    background-color: lightgray;
+    padding: 5px;
+    border: 1px solid gray;
+}
+input{
+    width: 120px;
+}

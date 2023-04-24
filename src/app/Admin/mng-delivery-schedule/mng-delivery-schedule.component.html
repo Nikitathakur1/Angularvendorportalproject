@@ -1,0 +1,56 @@
+<div class="container">
+    <h2><i class="fa fa-bars"></i> Manage Delivery Schedule</h2>
+    <hr>
+    <div id="d1">
+        Supplier Code <input type="text"><b> &nbsp; OR </b>&nbsp; Supplier Name <input type="text">&nbsp;
+        <b>OR</b>&nbsp;Delivery Schedule Type
+
+        <select name="type" id="type">
+            <option value="type1">All</option>
+        </select>&nbsp;&nbsp;
+        <button class="btn btn-danger">Search</button>
+    </div><br>
+    <button id="b1" class="btn-danger">Upload Schedule</button><span><button id="b1" class="btn-danger" (click)="exportexcel()">Export to
+            Excel</button>&nbsp;&nbsp;<a href="/AddDeliverschedule" ><button id="b1" class="btn-danger">Add Delivery Schedule</button></a>&nbsp;&nbsp;<button id="b1" class="btn-danger" (click)="print()">Print</button></span>
+            <!-- (click)="adddelivery(user.dsMainID)" -->
+    <div><br><br>
+        <a href="" id="b1">Results 1-100 of 114</a> <br><br>
+        <table border="1">
+            <thead>
+                <th>Supplier Name</th>
+                <th>Supplier Code</th>
+                <th>Purchase Order No.</th>
+                <th>Purchase Order Date</th>
+                <th>Delivery Schedule No</th>
+                <th>Delivery Schedule Date</th>
+                <th>Delivery Schedule</th>
+                <th>Creayted By</th>
+                <th>Update Delivery Schedule</th>
+                <th>Created Date</th>
+                <th>Last Updated Date</th>
+                <th>Last Updated By</th>
+                <th>Schedule Type</th>
+                <th>Plant</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                <td>{{user.supplier}}</td>
+                <td></td>
+                <td>{{user.sappoNo}}</td>
+                <td>{{user.poDate|date: 'dd/MM/yyyy'}}</td>
+                <td>{{user.dsMainID}}</td>
+                <td>{{user.dsEnteredDate|date:'dd/MM/yyyy'}}</td>
+                <td><a href="/ViewDeliverySchedule" (click)="selecteddelivery(user.dsMainID)">View</a>|<a href="/ViewDeliverySchedule" onclick="window.open(href).print()">Print</a></td>
+                <td>{{user.createdBy}}</td>
+                <td><a>Update</a></td>
+                <td>{{user.createdDate|date: 'dd/MM/yyyy'}}</td>
+                <td>{{user.modifiedDate |date: 'dd/MM/yyyy'}}</td>
+                <td>{{user.modifiedBy}}</td>
+               <td>{{user.deliveryScheduleType}}</td>
+                <td></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

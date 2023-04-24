@@ -1,0 +1,29 @@
+<div class="container">
+    <h2><i class="fa fa-file"></i> Manage Invoice Details</h2>
+    <hr>
+
+    <h3><a href="">Results 1-7 of 7</a><span><a href="/addinvoice"><button class="btn btn-success">Add Invoice
+                    Details</button></a>&nbsp;<button class="btn btn-primary" (click)="exportexcel()">Export to
+                Excel</button></span></h3><br>
+    <table border="1">
+        <thead>
+            <th>Purchase_Order_No</th>
+            <th>Invoice_No</th>
+            <th>Invoice_Date</th>
+            <th>Edit_Invoice_detail</th>
+            <th>Invoice_Details</th>
+            <th>Generate_Bar_code</th>
+        </thead>
+        <tbody *ngIf="invoice.length">
+            <tr *ngFor="let item of invoice">
+                <td>{{item.purchaesOrderNo}}</td>
+                <td>{{item.invoiceNo}}</td>
+                <td>{{item.invoiceDate }}</td>
+                <td><a>Edit</a></td>
+                <td><a href="/viewinvoice" (click)="viewinvoice(item.poMainId)">View</a></td>
+                <td><a>Generate</a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

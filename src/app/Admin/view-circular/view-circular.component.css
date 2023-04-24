@@ -1,0 +1,33 @@
+.container{
+    width: 75vw;
+    margin-left:120px;
+}
+td{
+    padding: 5px;
+}
+#out{
+    background-color: lightgrey;
+    border: 1px solid gray;
+    width: 60%;
+    margin-left: 180px;
+    padding: 10px;
+}
+h2{
+    color: brown;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+table{
+    width:100%;
+    border: 1px solid;
+}
+thead{
+    background-color: rgb(187, 59, 59);
+    color: white;
+}
+td,th{
+    padding: 10px;
+    font-size: 14px;
+}
